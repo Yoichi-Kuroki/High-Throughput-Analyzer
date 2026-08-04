@@ -26,10 +26,22 @@ We recommend creating a folder named date_chambername (as shown in the figure) a
 ### 1. Function declarations and library imports
 16 cells. This section handles library imports and function declarations. You only need to run it once per analysis—after that, the functions are registered and ready to use.
 
-### 2. File loading and configuration of various settings
+### 2. Configuration of various settings and File loading
 The first cell in this section launches a GUI for parameter input.
+<p align="center">
+  <img width="1969" height="723" alt="image" src="https://github.com/user-attachments/assets/7fdbae41-87d5-4041-a0e9-e58d8bb2e78d" />
+</p>
+
+You can load file that you 
+In the second cell, it loads the Tiff file.
+Please wait, as this takes more than 10 seconds.
+
+For images of 1152×1152 pixels, it will apply correction for excitation light unevenness. 
+Even if the size is different, it can still be loaded, but correction will not be applied, so you will see the warning: "The analysis image and correction image sizes do not match!"
 
 ### 3. Estimation of Cellular Fluorescence Intensity
+Detects and tracks cells from images, converts them into low-dimensional data, and collects various parameters.
+This step will take about 10 minutes or more.
 
 ### 4. Review Results of estimation of Cellular Fluorescence Intensity
 
@@ -37,13 +49,13 @@ The first cell in this section launches a GUI for parameter input.
 
 ### 6. Save cell distribution map
 
-### 7. Manual Visal Inspection
+### 7. Manual Visual Inspection
 
 ### 8. Estimate localization duration
 
-### 9. Manual Visal Inspection of localization Duration
+### 9. Manual Visual Inspection of localization Duration
 
-Additional analysys
+Additional analysis
 ---
 
 ### 10. Save Powerpoint, pole&cyto in text file
@@ -52,7 +64,7 @@ Additional analysys
 
 ### 12. Aggregation of parameters [cell area, average brightness etc]
 
-### 13. Visualyze cell area
+### 13. Visualize cell area
 
 ### 14. Variation in the number of analyzed cells
 
