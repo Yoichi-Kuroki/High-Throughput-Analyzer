@@ -44,8 +44,19 @@ Detects and tracks cells from images, converts them into low-dimensional data, a
 This step will take about 10 minutes or more.
 
 ### 4. Review Results of estimation of Cellular Fluorescence Intensity
+It is recommended to check the quality of the entered parameters and the aggregated luminance (intensity) values.
+Additional analysis > Let's try running the "Variation in the number of analyzed cells" section.
 
 ### 5. Fitting
+Now, if you run the "Fitting" cell, the graphs will all be output at once.
+These results fall into three patterns:
+
+- Cases where fitting succeeded and the pole was estimated (a time trace will be plotted)
+- Cases where fitting succeeded but the pole could not be estimated
+- Cases where fitting failed
+
+It is necessary for the analyst to briefly review these results.
+<img width="1269" height="582" alt="image" src="https://github.com/user-attachments/assets/4fb4178b-c0f8-44ef-95b6-ac2fd74e34db" />
 
 ### 6. Save cell distribution map
 
@@ -67,6 +78,21 @@ Additional analysis
 ### 13. Visualize cell area
 
 ### 14. Variation in the number of analyzed cells
+
+In the first cell, you can see the variation in the number of tracked cells.
+The orange line represents the number of cells detected in each frame, while the blue line represents the number of cells that have been assigned numbers and are being successfully tracked. Since cells are gradually lost from tracking over time, the blue line will gradually decrease. If the blue or orange line drops suddenly, this may indicate an issue such as defocusing, so please check the original image.
+
+In the next cell, you can get a rough idea of things like the timing of solution exchange and the time at which localization reached its maximum.
+The blue line is the average, across all cells, of the "maximum intracellular luminance (intensity) value."
+The red line is the average, across all cells, of the "mean intracellular luminance (intensity) value."
+The green line is the difference between the two.
+Additionally, the vertical black line indicates the currently set solution exchange time. If this does not match the pattern of change in the luminance values, you will need to reconfigure the parameter settings. Since this affects not only the localization duration but also things like the fitting, please set it as precisely as possible.
+
+In the third cell, you can check the change over time in the average cell length.
+Normally, the length changes very little.
+However, if the salt concentration of the exchanged solution is incorrect, for example, you may observe the cells shrinking or elongating.
+<img width="1494" height="450" alt="image" src="https://github.com/user-attachments/assets/4fe9ea3b-cf56-46b1-8866-0f10dc239559" />
+
 
 ## 📄Licence
 MIT
