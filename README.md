@@ -59,8 +59,18 @@ It is necessary for the analyst to briefly review these results.
 <img width="1269" height="582" alt="image" src="https://github.com/user-attachments/assets/4fb4178b-c0f8-44ef-95b6-ac2fd74e34db" />
 
 ### 6. Save cell distribution map
+This section displays an important clue that tells you which cell number the program has assigned to each cell.
+When you run the cell, "cell_distribution_map.png" and "[tif filename]_cell_map.zip" will be saved.
+Cell Distribution Map.png can be checked visually. Additionally, for checking changes over time, it is recommended to use cell_map.zip in conjunction with ImageJ.
+cell_map.zip contains `.roi` files for use with ImageJ's ROI Manager feature.
+<p align="center">
+  <img width="300"  alt="image" src="https://github.com/user-attachments/assets/37a90291-5c48-448b-9ce3-215c1c0a3c57" />
+</p>
 
 ### 7. Manual Visual Inspection
+<p align="center">
+  <img height="300" alt="mvi_hta" src="https://github.com/user-attachments/assets/080bf588-9b06-4285-8526-c9a273f7ad85" />
+</p>
 
 ### 8. Estimate localization duration
 
