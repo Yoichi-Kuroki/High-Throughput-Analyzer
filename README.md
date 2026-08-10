@@ -68,13 +68,37 @@ cell_map.zip contains `.roi` files for use with ImageJ's ROI Manager feature.
 </p>
 
 ### 7. Manual Visual Inspection
+Looking at the results you checked in Section 5, you likely noticed that even among the results labeled "fitting succeeded, pole estimated," some entries were not actually successful.
+
+The manual review process is where a human checks these results and filters out the unsuccessful ones.
+
+When you run the cell, a GUI like the one shown below will appear. Click NEXT and BACK (the left/right arrow keys and A/D keys also work) to step through the results, checking or unchecking the "Select" checkbox as appropriate.
+
+Once you have reviewed all the results, close the GUI using the × button in the upper right corner.
+
 <p align="center">
   <img height="300" alt="mvi_hta" src="https://github.com/user-attachments/assets/080bf588-9b06-4285-8526-c9a273f7ad85" />
 </p>
 
 ### 8. Estimate localization duration
+When you run the "Estimate localization duration" cell, another long list of results will be displayed.
+
+This step calculates the localization duration from the fluorescence intensity change traces of the cells selected during the manual check described above.
+
+The resulting graph will look like the one shown below, with the light blue shaded region representing the localization duration. When calculating the localization duration, photobleaching correction and a moving average are applied to the pole signal, shown as the green line. The uncorrected line (the raw trace) is shown in pale blue.
+
+This step is required in order to record the results, so please run it even if you do not need the localization duration values.
 
 ### 9. Manual Visual Inspection of localization Duration
+This is another manual check.
+
+Please verify the following:
+
+Were any entries overlooked during the previous manual check?
+Has the localization duration been calculated correctly?
+Does the photobleaching correction look abnormal? (In some cases, the green line and the pale blue line diverge significantly.)
+
+This step is required in order to record the results, so please run it even if you do not need the localization duration values.
 
 Additional analysis
 ---
