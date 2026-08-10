@@ -80,12 +80,37 @@ Additional analysis
 ---
 
 ### 10. Save Powerpoint, pole&cyto in text file
-
+When you run this cell, a pptx file will be generated in the same location as the tif file.
+This contains graphs of the fitting, shape, and raw traces for the cells selected in 9.
+It will also save the numerical data for the pole and cytoplasm traces.
+A folder named "{file_name}_localization_fluorescence_intensity" will be generated in the same location as the tif file, and It contains a txt file inside.
+At the same time, a file named "analysis_log{date}.txt" will be generated, which records the **parameters set in 2**., the experiment date, the localization ratio, and so on.
 ### 11. Centroid trajectory
+This plots and records the movement of the cells that were tracked during the observation period.
+
+This section contains the following three cells:
+
+- By default, this displays and records the centroid movement of the cells selected during the manual check. If you want to aggregate this as a parameter later on, please run this one!
+- Displays the centroid trajectories of all cells within a single field of view
+- Displays the centroid movement of one specified cell
 
 ### 12. Aggregation of parameters [cell area, average brightness etc]
+This section contains the following three cells:
+
+- Collect parameters
+- Compile the collected parameters and save them as a CSV
+- Display a graph
+
+If you want to collect parameters, running the top two cells is required.
+A CSV file named "aggregated_data.csv" will be created in the same location as the tif file.
 
 ### 13. Visualize cell area
+This displays all contours within the field of view, color-coded by area.
+By default, only cells with an area between 1 and 2000 are displayed.
+Please adjust the upper and lower limits as needed.
+
+The histogram shows the frequency of cell areas.
+Horizontal axis: area Vertical axis: frequency
 
 ### 14. Variation in the number of analyzed cells
 
